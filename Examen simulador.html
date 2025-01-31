@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de 5 Preguntas</title>
+    <title>Simulacro </title>
+    <style>
+        .opciones {
+            display: flex;
+            justify-content: space-between;
+        }
+        .opciones label {
+            margin-right: 10px;
+        }
+    </style>
     <script>
         function calificar() {
             let correctasEspañol = 0;
@@ -41,62 +50,87 @@
     </script>
 </head>
 <body>
-    <h1>Formulario de 5 Preguntas</h1>
+    <h1>Simulacro</h1>
     <form action="javascript:void(0)">
         <!-- Pregunta 1 (Español) -->
-        <p>Pregunta 1: ¿Cuál es la palabra correcta para expresar "muchos" en plural?</p>
-        <input type="radio" id="p1a" name="p1" value="A">
-        <label for="p1a">A) Muchos</label><br>
-        <input type="radio" id="p1b" name="p1" value="B">
-        <label for="p1b">B) Muy</label><br>
-        <input type="radio" id="p1c" name="p1" value="C">
-        <label for="p1c">C) Mas</label><br>
-        <input type="radio" id="p1d" name="p1" value="D">
-        <label for="p1d">D) Ninguna</label><br>
+        <p>Pregunta 1:</p>
+        <div class="opciones">
+            <input type="radio" id="p1a" name="p1" value="A">
+            <label for="p1a">A)</label>
+
+            <input type="radio" id="p1b" name="p1" value="B">
+            <label for="p1b">B)</label>
+
+            <input type="radio" id="p1c" name="p1" value="C">
+            <label for="p1c">C)</label>
+
+            <input type="radio" id="p1d" name="p1" value="D">
+            <label for="p1d">D)</label>
+        </div>
 
         <!-- Pregunta 2 (Español) -->
-        <p>Pregunta 2: ¿Cuál es el verbo adecuado en esta oración: "Yo ____ al parque?"</p>
-        <input type="radio" id="p2a" name="p2" value="A">
-        <label for="p2a">A) Iré</label><br>
-        <input type="radio" id="p2b" name="p2" value="B">
-        <label for="p2b">B) Voy</label><br>
-        <input type="radio" id="p2c" name="p2" value="C">
-        <label for="p2c">C) Iba</label><br>
-        <input type="radio" id="p2d" name="p2" value="D">
-        <label for="p2d">D) Fui</label><br>
+        <p>Pregunta 2:</p>
+        <div class="opciones">
+            <input type="radio" id="p2a" name="p2" value="A">
+            <label for="p2a">A)</label>
+
+            <input type="radio" id="p2a" name="p2" value="B">
+            <label for="p2b">B)</label>
+
+            <input type="radio" id="p2a" name="p2" value="C">
+            <label for="p2b">C)</label>
+
+            <input type="radio" id="p2a" name="p2" value="D">
+            <label for="p2b">D)</label>
+        </div>
 
         <!-- Pregunta 3 (Matemáticas) -->
-        <p>Pregunta 3: ¿Cuál es el resultado de la integral ∫x² dx?</p>
-        <input type="radio" id="p3a" name="p3" value="A">
-        <label for="p3a">A) x³</label><br>
-        <input type="radio" id="p3b" name="p3" value="B">
-        <label for="p3b">B) 2x³</label><br>
-        <input type="radio" id="p3c" name="p3" value="C">
-        <label for="p3c">C) (1/3)x³</label><br>
-        <input type="radio" id="p3d" name="p3" value="D">
-        <label for="p3d">D) 3x²</label><br>
+        <p>Pregunta 3:</p>
+        <div class="opciones">
+            <input type="radio" id="p3a" name="p3" value="A">
+            <label for="p3a">A)</label>
+
+            <input type="radio" id="p3b" name="p3" value="B">
+            <label for="p3b">B)</label>
+
+            <input type="radio" id="p3c" name="p3 value="C">
+            <label for="p3c">C)</label>
+
+            <input type="radio" id="p3d" name="p3" value="D">
+            <label for="p3d">D)</label>
+        </div>
 
         <!-- Pregunta 4 (Matemáticas) -->
-        <p>Pregunta 4: ¿Cuál es el valor de π?</p>
-        <input type="radio" id="p4a" name="p4" value="A">
-        <label for="p4a">A) 3.1416</label><br>
-        <input type="radio" id="p4b" name="p4" value="B">
-        <label for="p4b">B) 2.7182</label><br>
-        <input type="radio" id="p4c" name="p4" value="C">
-        <label for="p4c">C) 1.6180</label><br>
-        <input type="radio" id="p4d" name="p4" value="D">
-        <label for="p4d">D) 3.0000</label><br>
+        <p>Pregunta 4:</p>
+        <div class="opciones">
+            <input type="radio" id="p4a" name="p4" value="A">
+            <label for="p4a">A)</label>
+
+            <input type="radio" id="p4b" name="p4" value="B">
+            <label for="p4b">B)</label>
+
+            <input type="radio" id="p4c" name="p4" value="C">
+            <label for="p4c">C)</label>
+
+            <input type="radio" id="p4d" name="p4" value="D">
+            <label for="p4d">D)</label>
+        </div>
 
         <!-- Pregunta 5 (Historia) -->
-        <p>Pregunta 5: ¿En qué año cayó el Imperio Romano de Occidente?</p>
-        <input type="radio" id="p5a" name="p5" value="A">
-        <label for="p5a">A) 476 d.C.</label><br>
-        <input type="radio" id="p5b" name="p5" value="B">
-        <label for="p5b">B) 1492 d.C.</label><br>
-        <input type="radio" id="p5c" name="p5" value="C">
-        <label for="p5c">C) 1000 d.C.</label><br>
-        <input type="radio" id="p5d" name="p5" value="D">
-        <label for="p5d">D) 800 d.C.</label><br>
+        <p>Pregunta 5:</p>
+        <div class="opciones">
+            <input type="radio" id="p5a" name="p5" value="A">
+            <label for="p5a">A)</label>
+
+            <input type="radio" id="p5b" name="p5" value="B">
+            <label for="p5b">B)</label>
+
+            <input type="radio" id="p5c" name="p5" value="C">
+            <label for="p5c">C)</label>
+
+            <input type="radio" id="p5d" name="p5" value="D">
+            <label for="p5d">D)</label>
+        </div>
 
         <br>
         <button type="button" onclick="calificar()">Calificar</button>
